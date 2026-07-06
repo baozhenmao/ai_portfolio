@@ -50,12 +50,11 @@ python app.py
 python train_xgboost.py
 
 📂 项目结构
-
-├── app.py                  # Flask部署服务 (图像分类API)
-├── train_fashion.py        # 图像分类模型训练脚本
-├── train_xgboost.py        # 复购预测模型训练脚本
-├── .gitignore              # Git忽略文件配置
-└── README.md               # 项目说明文档
+    ├── app.py                  # Flask部署服务 (图像分类API)
+    ├── train_fashion.py        # 图像分类模型训练脚本
+    ├── train_xgboost.py        # 复购预测模型训练脚本
+    ├── .gitignore              # Git忽略文件配置
+    └── README.md               # 项目说明文档
 📫 关于我
 GitHub: baozhenmao
 
