@@ -1,0 +1,18 @@
+# 数据和模型文件（太大，不上传）
+data/
+*.pth
+*.onnx
+*.gz
+*.zip
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+venv/
+
+# IDE配置
+.vscode/
+.idea/
