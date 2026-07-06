@@ -34,3 +34,31 @@ markdown
 2.  安装依赖库（建议使用虚拟环境）：
     ```bash
     pip install torch torchvision onnx onnxruntime flask pillow pandas numpy scikit-learn xgboost
+
+运行图像分类服务
+在项目目录下，确保有 fashion_mnist_cnn.onnx 模型文件
+
+执行以下命令启动服务：
+
+python app.py
+
+服务启动后，可通过 POST 请求 http://localhost:5000/predict 上传图片进行测试
+
+运行复购预测模型
+在项目目录下直接运行训练脚本：
+
+python train_xgboost.py
+
+📂 项目结构
+
+├── app.py                  # Flask部署服务 (图像分类API)
+├── train_fashion.py        # 图像分类模型训练脚本
+├── train_xgboost.py        # 复购预测模型训练脚本
+├── .gitignore              # Git忽略文件配置
+└── README.md               # 项目说明文档
+📫 关于我
+GitHub: baozhenmao
+
+邮箱: Maobaozhen.iot@QQ.com
+
+—— 持续学习与实践的AI初学者，正在向AI软件开发工程师的目标前进。
