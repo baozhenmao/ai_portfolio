@@ -39,15 +39,15 @@ markdown
 在项目目录下，确保有 fashion_mnist_cnn.onnx 模型文件
 
 执行以下命令启动服务：
-
-python app.py
+    ```bash
+    python app.py
 
 服务启动后，可通过 POST 请求 http://localhost:5000/predict 上传图片进行测试
 
 运行复购预测模型
 在项目目录下直接运行训练脚本：
-
-python train_xgboost.py
+    ```bash
+    python train_xgboost.py
 
 ## 📂 项目结构
 
