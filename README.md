@@ -49,15 +49,22 @@ python app.py
 
 python train_xgboost.py
 
-📂 项目结构
-    ├── app.py                  # Flask部署服务 (图像分类API)
-    ├── train_fashion.py        # 图像分类模型训练脚本
-    ├── train_xgboost.py        # 复购预测模型训练脚本
-    ├── .gitignore              # Git忽略文件配置
-    └── README.md               # 项目说明文档
-📫 关于我
-GitHub: baozhenmao
+## 📂 项目结构
 
-邮箱: Maobaozhen.iot@QQ.com
+```
+├── app.py                  # Flask部署服务 (图像分类API)
+├── train_fashion.py        # 图像分类模型训练脚本
+├── train_xgboost.py        # 复购预测模型训练脚本
+├── fashion_mnist_cnn.onnx  # 训练好的ONNX模型文件
+├── .gitignore              # Git忽略文件配置
+└── README.md               # 项目说明文档
+```
 
-—— 持续学习与实践的AI初学者，正在向AI软件开发工程师的目标前进。
+---
+
+## 📫 关于我
+
+- **GitHub**: [baozhenmao](https://github.com/baozhenmao)
+- **邮箱**: Maobaozhen.iot@QQ.com
+
+*—— 持续学习与实践的AI初学者，正在向AI软件开发工程师的目标前进。*
