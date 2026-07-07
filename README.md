@@ -6,15 +6,15 @@
 markdown
 ## 📁 项目列表
 
-### 1. Fashion-MNIST 图像分类与模型部署
-*技术栈：Python · PyTorch · ONNX · Flask*
+### 1. CIFAR-10 图像分类与模型部署 (ResNet-18)
+*技术栈：Python · PyTorch · ResNet-18 · ONNX · Flask*
 
-这是一个完整的图像分类落地项目。我训练了一个卷积神经网络（CNN）来识别服装类别，并将模型部署为HTTP API服务。
+这是一个完整的图像分类落地项目。我训练了一个ResNet-18深度卷积神经网络来识别CIFAR-10彩色图像，并将模型部署为HTTP API服务。
 
-- **模型表现**：在测试集上达到 **91.33%** 的准确率
-- **核心功能**：用户上传一张服装图片，API返回Top-3的类别预测及置信度
+- **模型表现**：在测试集上达到 **94.44%** 的准确率
+- **核心功能**：用户上传一张图片，API返回Top-3的类别预测及置信度
 - **部署方式**：PyTorch模型 → ONNX格式 → ONNX Runtime推理 → Flask封装的RESTful API
-- **关键文件**：[`train_fashion.py`](./train_fashion.py) (训练脚本) | [`app.py`](./app.py) (部署服务)
+- **关键文件**：[`train_cifar10.py`](./train_cifar10.py) (训练脚本) | [`app.py`](./app.py) (部署服务)
 
 ### 2. 电商用户复购预测
 *技术栈：Python · Pandas · XGBoost · Scikit-learn*
@@ -58,12 +58,13 @@ python train_xgboost.py
 ## 📂 项目结构
 
 ```
-├── app.py                  # Flask部署服务 (图像分类API)
-├── train_fashion.py        # 图像分类模型训练脚本
-├── train_xgboost.py        # 复购预测模型训练脚本
-├── fashion_mnist_cnn.onnx  # 训练好的ONNX模型文件
-├── .gitignore              # Git忽略文件配置
-└── README.md               # 项目说明文档
+├── app.py                 # Flask部署服务 (图像分类API)
+├── train_cifar10.py       # CIFAR-10图像分类模型训练脚本 (ResNet-18)
+├── train_xgboost.py       # 复购预测模型训练脚本
+├── cifar10_resnet18.onnx  # 训练好的ONNX模型文件
+├── fashion_mnist_cnn.onnx # (可选) 旧版Fashion-MNIST模型
+├── .gitignore             # Git忽略文件配置
+└── README.md              # 项目说明文档
 ```
 
 ---
