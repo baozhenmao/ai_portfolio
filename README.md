@@ -37,7 +37,7 @@ markdown
 
 ### 运行图像分类服务
 
-在项目目录下，确保有 `fashion_mnist_cnn.onnx` 模型文件，执行以下命令启动服务：
+3.  在项目目录下，确保有 `fashion_mnist_cnn.onnx` 模型文件，执行以下命令启动服务：
 
 ```bash
 python app.py
@@ -45,6 +45,14 @@ python app.py
 
 服务启动后，可通过 `POST` 请求 `http://localhost:5000/predict` 上传图片进行测试。
 
+
+4. 保存 README.md，关闭文件**
+
+5. 再提交一次README的更改**：
+   ```bash
+   git add README.md
+   git commit -m "更新README，添加app.py运行指引"
+   git push
 ---
 
 ### 运行复购预测模型
@@ -58,12 +66,12 @@ python train_xgboost.py
 ## 📂 项目结构
 
 ```
+ai_portfolio/
 ├── app.py                 # Flask部署服务 (图像分类API)
 ├── train_cifar10.py       # CIFAR-10图像分类模型训练脚本 (ResNet-18)
 ├── train_xgboost.py       # 复购预测模型训练脚本
 ├── cifar10_resnet18.onnx  # 训练好的ONNX模型文件
-├── fashion_mnist_cnn.onnx # (可选) 旧版Fashion-MNIST模型
-├── .gitignore             # Git忽略文件配置
+├── requirements.txt       # 项目依赖清单
 └── README.md              # 项目说明文档
 ```
 
