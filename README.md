@@ -37,7 +37,7 @@ markdown
 
 ### 运行图像分类服务
 
-3.  在项目目录下，确保有 cifar10_resnet18.onnx 模型文件，执行以下命令启动服务：
+在项目目录下，确保有 `cifar10_resnet18.onnx` 模型文件，执行以下命令启动服务：
 
 ```bash
 python app.py
