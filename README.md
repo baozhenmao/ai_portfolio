@@ -37,23 +37,13 @@ markdown
 
 ### 运行图像分类服务
 
-3.  在项目目录下，确保有 `fashion_mnist_cnn.onnx` 模型文件，执行以下命令启动服务：
+3.  在项目目录下，确保有 cifar10_resnet18.onnx 模型文件，执行以下命令启动服务：
 
 ```bash
 python app.py
 ```
 
 服务启动后，可通过 `POST` 请求 `http://localhost:5000/predict` 上传图片进行测试。
-
-
-4. 保存 README.md，关闭文件**
-
-5. 再提交一次README的更改**：
-   ```bash
-   git add README.md
-   git commit -m "更新README，添加app.py运行指引"
-   git push
----
 
 ### 运行复购预测模型
 
